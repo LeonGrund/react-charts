@@ -5,18 +5,23 @@ import './App.css';
 
 import teamData from './components/global/dataStubs/TeamData';
 
+//
+// let chart = new tauCharts.Chart({
+//             data: teamData,
+//             type: 'horizontalBar',
+//             x: 'effort',
+//             y: 'team',
+//             color:'priority'
+//         });
+// chart.renderTo('#bar');
 
-let chart = new tauCharts.Chart({
-            data: teamData,
-            type: 'horizontalBar',
-            x: 'effort',
-            y: 'team',
-            color:'priority'
-        });
-chart.renderTo('#bar');
+this.props.createBarChart('#bar', teamData, 'horizontalBar', 'effort', 'team', 'priority');
+this.props.chart.bar.renderTo(this.props.chart.bar.name);
 
 export class App extends Component {
+
   render() {
+
     return (
       // <div className="App">
       //

@@ -4,6 +4,7 @@ import {
   initializeData,
   deleteData,
   addData,
+  createBarChart,
 } from '../actions/actions'
 
 
@@ -15,6 +16,7 @@ const mapDispatchToProps = {
   initializeData,
   deleteData,
   addData,
+  createBarChart,
 }
 
 const AppContainer = connect (
